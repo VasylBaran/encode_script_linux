@@ -22,8 +22,8 @@ then
 fi
 }
 
-FILES="/home/samael/Documents/Watch/*"
-PRESET="iPhone & iPod Touch"
+FILES="/home/usr/Documents/Watch/*"
+PRESET="-e x264 -q 20 --x264-preset veryfast"
 
 #//////////////////////////////////////////
 #exec 3>&1 4>&2
@@ -118,11 +118,11 @@ then
 fi
 
 done
-if [ "$(ls -A /home/samael/Documents/Watch/)" ]; then
-main
-fi
+#if [ "$(ls -A /home/usr/Documents/Watch/)" ]; then
+#main
+#fi
 }
-if [ "$(ls -A /home/samael/Documents/Watch/)" ]; then
+if [ "$(ls -A /home/usr/Documents/Watch/)" ]; then
 main
 fi
 exit
